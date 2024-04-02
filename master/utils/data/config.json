@@ -1,12 +1,9 @@
 {
-  "version": "0.1 TEMPLATE",
+  "version": "0.1 IN DEV",
   "owners": [
     834357440584876062
   ],
-  "name": "Default Bot",
-  "token": [
-    ""
-  ],
-  "guildName": "Default",
+  "name": "CBNL",
+  "guildName": "Los Amigos Pollos ",
   "autoroleEnabled": "False"
 }

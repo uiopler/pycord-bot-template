@@ -43,35 +43,35 @@ class Configure(commands.Cog):
 
 
 
-    @commands.slash_command(description="Toggle Automatic modules")
-    @discord.default_permissions(administrator=True)
-    @option("module", choices=["autorole", "automod"], required=True)
-    @option("type", choices=["On", "Off"], required=True)
-    async def toggle(self, ctx, module, type):
+    # @commands.slash_command(description="Toggle Automatic modules")
+    # @discord.default_permissions(administrator=True)
+    # @option("module", choices=["autorole", "automod"], required=True)
+    # @option("type", choices=["On", "Off"], required=True)
+    # async def toggle(self, ctx, module, type):
 
-        if module == "autorole":
+    #     if module == "autorole":
 
-            if type == "On":
+    #         if type == "On":
 
-                default.change_config_value("autoroleEnabled", "True")
-                await ctx.respond("Autorole has been Enabled")
+    #             default.change_config_value("autoroleEnabled", "True")
+    #             await ctx.respond("Autorole has been Enabled")
 
-            else:
+    #         else:
 
-                default.change_config_value("autoroleEnabled", "False")
-                await ctx.respond("Autorole has been Disabled")
+    #             default.change_config_value("autoroleEnabled", "False")
+    #             await ctx.respond("Autorole has been Disabled")
 
-        elif module == "automod":
+    #     elif module == "automod":
 
-            if type == "On":
+    #         if type == "On":
                 
-                default.change_config_value("automodEnabled", "True")
-                await ctx.respond("Automod has been Enabled")
+    #             default.change_config_value("automodEnabled", "True")
+    #             await ctx.respond("Automod has been Enabled")
             
-            else: 
+    #         else: 
 
-                default.change_config_value("automodEnabled", "False")
-                await ctx.respond("Automod has been Disabled")
+    #             default.change_config_value("automodEnabled", "False")
+    #             await ctx.respond("Automod has been Disabled")
 
 def setup(bot:commands.Bot):
     bot.add_cog(Configure(bot))

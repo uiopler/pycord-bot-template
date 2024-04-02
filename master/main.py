@@ -5,6 +5,8 @@ from colorama import Fore as f
 from utils import default, permissions, logger
 from discord import option
 from utils import permissions
+from dotenv import load_dotenv
+load_dotenv("env.env")
 token = (str(os.getenv("TOKEN")))
 
 
@@ -48,7 +50,7 @@ async def version(ctx):
     await ctx.respond(config['version'])
 
 try:
-    extensions = ['cogs.configure','cogs.manager','cogs.userinfo','cogs.monitors.JoinLeaveMonitor']
+    extensions = ['cogs.configure','cogs.manager','cogs.userinfo', 'cogs.ring']
     try:
         for i in extensions:
             bot.load_extension(i)
@@ -58,7 +60,7 @@ try:
 
         print(e)
 
-    bot.run("token")
+    bot.run("MTIwMjcwMzYzMTc5MTQzMTcwMA.G8sQod.k6hrMdPXN5uEnRqVwoJAcyApWuNsvouCz_mOIg")
     
 
 except Exception as e:
