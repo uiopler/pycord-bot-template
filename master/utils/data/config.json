@@ -1,9 +1,8 @@
 {
-  "version": "0.1 IN DEV",
+  "version": "0.1 MUSIC",
   "owners": [
     834357440584876062
   ],
   "name": "CBNL",
-  "guildName": "Los Amigos Pollos ",
-  "autoroleEnabled": "False"
+  "guildName": "Los Amigos Pollos"
 }

@@ -50,7 +50,7 @@ async def version(ctx):
     await ctx.respond(config['version'])
 
 try:
-    extensions = ['cogs.configure','cogs.manager','cogs.userinfo', 'cogs.ring']
+    extensions = ['cogs.configure','cogs.manager']
     try:
         for i in extensions:
             bot.load_extension(i)
@@ -60,8 +60,8 @@ try:
 
         print(e)
 
-    bot.run("MTIwMjcwMzYzMTc5MTQzMTcwMA.G8sQod.k6hrMdPXN5uEnRqVwoJAcyApWuNsvouCz_mOIg")
-    
+
+    bot.run(token)
 
 except Exception as e:
     print(e)
